@@ -1,12 +1,12 @@
 package model;
 
 
-public class barangjava {
- private String kode;
+public class barang {
+   private String kode;
  private String nama;
  private int jumlahTersedia;
  
- public barangjava (String kode, String nama, int jumlahTersedia){
+ public barang (String kode, String nama, int jumlahTersedia){
      if(kode == null || kode.trim().isEmpty()) {
          throw new IllegalArgumentException("kode barang wajib diisi.");
      }
@@ -49,4 +49,4 @@ public class barangjava {
          jumlahTersedia += jumlah;
      }
     
- }
+ } 
